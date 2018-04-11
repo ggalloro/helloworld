@@ -3,6 +3,6 @@ WORKDIR /go/src/github.com/kelseyhightower/app/
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build .
 
-FROM scratch
+FROM alpine:latest
 COPY --from=0 /go/src/github.com/kelseyhightower/app/app .
 ENTRYPOINT ["/app"]

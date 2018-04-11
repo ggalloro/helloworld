@@ -55,7 +55,7 @@ steps:
       - name: 'kube'
         path: /kube
 
-  # Clone the pipeline-infrastructure-staging repo.
+  # Clone the pipeline-infrastructure-test repo.
   - name: 'gcr.io/hightowerlabs/hub'
     env:
       - 'HUB_CONFIG=/config/hub'
@@ -71,9 +71,9 @@ steps:
         hub config --global user.email "$${ACTIVE_ACCOUNT}"
         hub config --global user.name "Google Container Builder"
 
-        hub clone "${_GITHUB_USERNAME}/pipeline-infrastructure-staging"
+        hub clone "${_GITHUB_USERNAME}/pipeline-infrastructure-test"
 
-        cd pipeline-infrastructure-staging
+        cd pipeline-infrastructure-test
 
         cat <<EOF > patch.yaml
         spec:
