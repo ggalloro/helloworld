@@ -16,7 +16,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: gcr.io/galloro-gke/helloworld:1.0.0
+      - image: gcr.io/galloro-gke/helloworld:v1.0
         name: pipeline
         ports:
         - containerPort: 80
