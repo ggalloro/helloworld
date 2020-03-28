@@ -1,3 +1,4 @@
+# Manifest creato per testare 'Checkbox CD' (Automated deployment da GUI di GKE)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
