@@ -1,5 +1,6 @@
-FROM node:12.3.1
+FROM node
 EXPOSE 80
+RUN apt-get update
 COPY server.js .
 CMD node server.js
 
