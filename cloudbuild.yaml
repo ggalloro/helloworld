@@ -1,3 +1,0 @@
-steps:
-- name: gcr.io/cloud-builders/docker
-  args: [ 'build', '-t', 'europe-docker.pkg.dev/galloro-gke/gcb-study/helloworld:tag1', '.']
